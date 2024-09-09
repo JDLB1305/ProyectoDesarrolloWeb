@@ -93,10 +93,10 @@ ul li a:hover {
 @media (max-width: 640px)  {
     .banner {
         width: 360px;
-        height: 300px;
-        padding-top: 60px;
+        height: 200px;
     }
 }
+
 
 /* --- Eventos Home --- */
 
@@ -237,6 +237,36 @@ ul li a:hover {
     height: 430px;
     border-radius: 2px;
     margin: 15px 20px;
+}
+
+.banda {
+    display: inline;
+    position: unset;
+    background-color: transparent;
+}
+
+.banda li {
+    list-style: circle;
+    margin: 15px;
+}
+
+@media (max-width: 640px) {
+    .articulo {
+        margin: 0;
+        background-color: darkgray;
+    }
+
+    .articulo section {
+        padding: 35px;
+        text-align: justify;
+    }
+
+    .collImage1 img {
+        width: 310px;
+        height: 290px;
+        border-radius: 2px;
+        margin: 15px 20px;
+    }
 }
 
 /* --- Musica (Albumnes) --- */
@@ -414,28 +444,27 @@ input[type="text"],input[type="email"] {
 
 .menuShop {
     height: 70px;
-    background-color: black;
-    padding: 0 20px;
-    display: flex;
-    align-items: flex-start;
 }
 
 .listShop {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-    justify-content: space-between;
-    align-items: center;
     padding: 0px;
+    margin: 0px;
 }
 
-.listShop img {
-    width: 20%;
+.logoShop {
+    width: 8%;
 }
 
 .textShop {
     font-size: 35px;
     text-align: center;
     margin: 60px;
+}
+
+@media (max-width: 360px) {
+    .logoShop {
+        width: 30%;
+    }
 }
 
 
