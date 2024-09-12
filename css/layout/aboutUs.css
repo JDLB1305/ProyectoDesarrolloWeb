@@ -1,0 +1,46 @@
+/* --- Sobre Nosotros ---*/
+.articulo {
+  margin: 100px 30px;
+  background-color: darkgray;
+}
+.articulo section {
+  padding: 35px 60px;
+  text-align: justify;
+}
+
+.encabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.encabezado h1 {
+  margin: 0px;
+  font-size: 45px;
+}
+.encabezado h2 {
+  margin-top: 0px;
+}
+
+.collImage1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.collImage1 img {
+  width: 430px;
+  height: 430px;
+  border-radius: 2px;
+  margin: 15px 20px;
+}
+
+.banda {
+  display: inline;
+  position: unset;
+  background-color: transparent;
+}
+.banda li {
+  list-style: circle;
+  margin: 15px;
+}
+
+/*# sourceMappingURL=aboutUs.css.map */

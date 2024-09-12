@@ -1,0 +1,55 @@
+@import "../utilities/variables.scss";
+@mixin alinear-columna {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Sobre Nosotros ---*/
+
+.articulo {
+    margin: 100px 30px;
+    background-color: $fondoBlog;
+
+    section {
+        padding: 35px 60px;
+        text-align: justify;
+    }
+}
+
+.encabezado {
+    @include alinear-columna;
+    align-items: center;
+
+    h1 {
+        margin: 0px;
+        font-size: 45px;
+    }
+
+    h2 {
+        margin-top: 0px;
+    }
+}
+
+.collImage1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+        width: 430px;
+        height: 430px;
+        border-radius: 2px;
+        margin: 15px 20px;
+    }
+}
+
+.banda {
+    display: inline;
+    position: unset;
+    background-color: transparent;
+
+    li {
+        list-style: circle;
+        margin: 15px;
+    }
+}

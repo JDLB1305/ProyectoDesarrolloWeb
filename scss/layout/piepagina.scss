@@ -1,0 +1,28 @@
+@import "../utilities/variables";
+
+@mixin alinear-columna {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Footer --- */
+
+footer {
+    @include alinear-columna;
+    align-items: center;
+    margin: 60px;
+}
+
+.redes {
+    display: flex;
+    text-align: center;
+    width: 250px;
+
+    div {
+        width: 200px;
+    }
+
+    img {
+        width: 30px;
+    }
+}

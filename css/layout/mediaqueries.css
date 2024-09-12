@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/* --- Navegacion (media queries) ---*/
+@media (max-width: 640px) {
+  nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0 20px;
+    z-index: 9;
+  }
+  nav .menu-icon {
+    display: block;
+  }
+  nav ul {
+    display: none; /* Oculta el menú */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+  nav ul .show {
+    display: flex; /* Muestra el menú cuando se haga clic */
+    z-index: 3;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+/* ---- Contenido Home (media queries)--- */
+@media (max-width: 640px) {
+  .banner {
+    width: 360px;
+    height: 200px;
+  }
+  .eventos .contenedor1 {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: #f7f3f3;
+    border-top: 3px solid red;
+    padding: 40px;
+    margin: 0px 35px 0px 35px;
+  }
+  .texto1 {
+    text-align: center;
+  }
+  .musicaHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel-inner .carousel-item .col-md-3 {
+    display: none;
+  }
+  .carousel-inner .carousel-item.active .col-md-3:first-child {
+    display: block;
+    width: 80%;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    width: 10%;
+  }
+}
+/* --- Sobre Nosotros (media queries) ---*/
+@media (max-width: 640px) {
+  .articulo {
+    margin: 0;
+    background-color: darkgray;
+  }
+  .articulo section {
+    padding: 35px;
+    text-align: justify;
+  }
+  .articulo .collImage1 img {
+    width: 310px;
+    height: 290px;
+    border-radius: 2px;
+    margin: 15px 20px;
+  }
+}
+/* --- Musica (media queries) ---*/
+@media (max-width: 640px) {
+  .albumnes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .albumnes div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    border-bottom: 2px solid black;
+    align-items: center;
+  }
+  .albumnes div img {
+    width: 320px;
+    height: 320px;
+  }
+  .descAlbum {
+    margin: 20px 0px;
+  }
+}
+/* --- Contacto (media queries) ---*/
+@media (max-width: 360px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    padding: 20px;
+  }
+  input[type=text], input[type=email] {
+    width: 260px;
+    height: 40px;
+  }
+  .contacto .row .col-12 {
+    margin-bottom: 15px;
+  }
+  .contacto .form-label {
+    font-size: 14px;
+  }
+  .contacto .form-control {
+    font-size: 14px;
+  }
+  .contacto textarea {
+    height: auto;
+  }
+  .contacto .btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+/* --- Tienda de Productos (nedia queries) ---*/
+@media (max-width: 360px) {
+  .logoShop {
+    width: 30%;
+  }
+}
+/* --- Footer (media queries) --- */
+@media (max-width: 640px) {
+  footer p {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=mediaqueries.css.map */

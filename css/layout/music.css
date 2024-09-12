@@ -1,0 +1,31 @@
+/* --- Musica (Albumnes) ---*/
+.titulo2 {
+  text-align: center;
+  font-size: 40px;
+  margin: 70px 35px;
+}
+
+.albumnes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.albumnes div {
+  display: flex;
+  margin-bottom: 60px;
+  border-bottom: 2px solid black;
+}
+.albumnes div img {
+  width: 470px;
+  height: 440px;
+}
+
+.descAlbum {
+  flex-direction: column;
+  margin-left: 50px;
+}
+.descAlbum h2, .descAlbum h3 {
+  margin-top: 0px;
+}
+
+/*# sourceMappingURL=music.css.map */

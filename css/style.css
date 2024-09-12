@@ -1,500 +1,435 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-/* --- Navegador --- */
 
 nav {
-    height: 60px;
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    background-color: black;
-    padding: 0 20px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  padding: 0 20px;
 }
-
-.menu-icon {
-    display: none; /* Oculto por defecto */
-    font-size: 30px;
-    cursor: pointer;
-    color: #f7f3f3;
+nav .menu-icon {
+  display: none; /* Oculto por defecto */
+  font-size: 30px;
+  cursor: pointer;
+  color: #f7f3f3;
 }
-
-ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease-in-out;
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
 }
-
-ul li {
-    list-style: none;
-    margin: 20px;
+nav ul li {
+  list-style: none;
+  margin: 20px;
 }
-
-ul li a {
-    text-decoration: none;
-    color: #f7f3f3;
-    margin: 10px;
+nav ul li a {
+  text-decoration: none;
+  color: #f7f3f3;
+  margin: 10px;
 }
-
-ul li a:hover {
-    color: #dad8d8;
+nav ul li a:hover {
+  color: #dad8d8;
 }
-
-/* Estilos para pantallas pequeñas */
-@media (max-width: 640px) {
-    .menu-icon {
-        display: block;
-    }
-
-    nav {
-        height: 60px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: black;
-        padding: 0 20px;
-        z-index: 9;
-    }
-
-    ul {
-        display: none; /* Oculta el menú */
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        background-color: black;
-        position: absolute;
-        top: 60px;
-        left: 0;
-    }
-
-    ul.show {
-        display: flex; /* Muestra el menú cuando se haga clic */
-        z-index: 3;
-    }
-
-    ul li {
-        margin: 10px 0;
-    }
-}
-
-
-/* --- Carrusel --- */
 
 .banner {
-    width: 1342px;
-    height: 500px;
+  width: 1342px;
+  height: 500px;
 }
-
-@media (max-width: 640px)  {
-    .banner {
-        width: 360px;
-        height: 200px;
-    }
-}
-
-
-/* --- Eventos Home --- */
 
 .eventos h1 {
-    font-size: 40px;
-    text-align: center;
-    margin: 30px;
+  font-size: 40px;
+  text-align: center;
+  margin: 30px;
+}
+.eventos .contenedor1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #f7f3f3;
+  border-top: 3px solid red;
+  padding: 40px;
+  margin: 0px 35px 0px 35px;
+}
+.eventos .contenedor1 button {
+  width: 170px;
+  height: 70px;
+  background: transparent;
+  border: none;
+}
+.eventos .contenedor1 button:hover {
+  border: 3px white solid;
+  border-radius: 3px;
+}
+.eventos .contenedor1 button a {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+}
+.eventos .contenedor1 button a:hover {
+  color: rgb(219, 214, 214);
 }
 
-.eventos .contenedor1 {
+.texto1 h2 {
+  font-size: x-large;
+}
+
+/* --- Musica --- */
+.musicaHome h2 {
+  font-size: 35px;
+  text-align: center;
+  margin: 60px;
+}
+
+.album {
+  display: flex;
+  justify-content: space-evenly;
+}
+.album div {
+  text-align: center;
+}
+.album div img {
+  height: 300px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 4%;
+}
+
+/* --- Sobre Nosotros ---*/
+.articulo {
+  margin: 100px 30px;
+  background-color: darkgray;
+}
+.articulo section {
+  padding: 35px 60px;
+  text-align: justify;
+}
+
+.encabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.encabezado h1 {
+  margin: 0px;
+  font-size: 45px;
+}
+.encabezado h2 {
+  margin-top: 0px;
+}
+
+.collImage1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.collImage1 img {
+  width: 430px;
+  height: 430px;
+  border-radius: 2px;
+  margin: 15px 20px;
+}
+
+.banda {
+  display: inline;
+  position: unset;
+  background-color: transparent;
+}
+.banda li {
+  list-style: circle;
+  margin: 15px;
+}
+
+/* --- Contacto ---*/
+.titulo3 {
+  text-align: center;
+  font-size: 40px;
+  margin: 70px 35px;
+  padding-bottom: 40px;
+  border-bottom: 2px #cdcdcd solid;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 880px;
+  height: 450px;
+  padding: 20px;
+}
+form .contenido {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 38px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type=text], input[type=email] {
+  width: 410px;
+  height: 40px;
+}
+
+#enviar-btn {
+  color: white;
+  background-color: rgb(199, 49, 49);
+  height: 40px;
+  font-size: medium;
+  border: none;
+  margin-top: 20px;
+}
+
+.aaa {
+  display: flex;
+  justify-content: space-between;
+}
+
+.manager {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.manager p {
+  font-size: 20px;
+  color: #000000;
+  margin: 5px;
+}
+
+.imgManager {
+  width: 200px;
+}
+
+/* --- Musica (Albumnes) ---*/
+.titulo2 {
+  text-align: center;
+  font-size: 40px;
+  margin: 70px 35px;
+}
+
+.albumnes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.albumnes div {
+  display: flex;
+  margin-bottom: 60px;
+  border-bottom: 2px solid black;
+}
+.albumnes div img {
+  width: 470px;
+  height: 440px;
+}
+
+.descAlbum {
+  flex-direction: column;
+  margin-left: 50px;
+}
+.descAlbum h2, .descAlbum h3 {
+  margin-top: 0px;
+}
+
+/* --- Tienda de Productos ---*/
+.menuShop {
+  height: 70px;
+}
+
+.listShop {
+  padding: 0px;
+  margin: 0px;
+}
+
+.logoShop {
+  width: 8%;
+}
+
+.textShop {
+  font-size: 35px;
+  text-align: center;
+  margin: 60px;
+}
+
+/* --- Footer --- */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px;
+}
+
+.redes {
+  display: flex;
+  text-align: center;
+  width: 250px;
+}
+.redes div {
+  width: 200px;
+}
+.redes img {
+  width: 30px;
+}
+
+/* --- Navegacion (media queries) ---*/
+@media (max-width: 640px) {
+  nav {
+    height: 60px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:black ;
+    background-color: black;
+    padding: 0 20px;
+    z-index: 9;
+  }
+  nav .menu-icon {
+    display: block;
+  }
+  nav ul {
+    display: none; /* Oculta el menú */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+  nav ul.show {
+    display: flex; /* Muestra el menú cuando se haga clic */
+    z-index: 3;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+/* ---- Contenido Home (media queries)--- */
+@media (max-width: 640px) {
+  .banner {
+    width: 360px;
+    height: 200px;
+  }
+  .eventos .contenedor1 {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
     color: #f7f3f3;
     border-top: 3px solid red;
     padding: 40px;
     margin: 0px 35px 0px 35px;
-}
-
-.contenedor1 button {
-    width: 170px;
-    height: 70px;
-    background: transparent;
-    border: none;
-}
-
-.contenedor1 button:hover {
-    border: 3px white solid;
-    border-radius: 3px;
-}
-
-.contenedor1 button a {
-    text-decoration: none;
-    color: white;
-    font-size: x-large;
-}
-
-.contenedor1 button a:hover {
-    color: rgb(219, 214, 214);
-}
-
-.texto1 h2 {
-    font-size: x-large;
-}
-
-@media (max-width: 640px) {
-    .eventos .contenedor1 {
-        display: flex;
-        flex-direction: column;
-        background-color: black;
-        color: #f7f3f3;
-        border-top: 3px solid red;
-        padding: 40px;
-        margin: 0px 35px 0px 35px;
-    }
-
-    .texto1 {
-        text-align: center;
-    }
-}
-
-/* --- Musica Home ---*/
-
-.musicaHome h2 {
-    font-size: 35px;
+  }
+  .texto1 {
     text-align: center;
-    margin: 60px;
-}
-
-.album {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.album div {
-    text-align: center;
-}
-
-.album div img {
-    height: 300px;
-}
-
-@media (max-width: 640px) {
-    .musicaHome {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .carousel-inner .carousel-item .col-md-3 {
-        display: none;
-    }
-
-    .carousel-inner .carousel-item.active .col-md-3:first-child {
-        display: block;
-        width: 80%;
-    }
-}
-
-
-/* --- Sobre Nosotros --- */
-
-.articulo {
-    margin: 100px 30px;
-    background-color: darkgray;
-}
-
-.articulo section {
-    padding: 35px 60px;
-    text-align: justify;
-}
-
-.encabezado {
+  }
+  .musicaHome {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .carousel-inner .carousel-item .col-md-3 {
+    display: none;
+  }
+  .carousel-inner .carousel-item.active .col-md-3:first-child {
+    display: block;
+    width: 80%;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    width: 10%;
+  }
 }
-
-.encabezado h1 {
-    margin: 0px;
-    font-size: 45px;
-}
-
-.encabezado h2 {
-    margin-top: 0px;
-}
-
-.collImage1 {
-    display: flex;
-    /* align-content: center; */
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.collImage1 img {
-    width: 430px;
-    height: 430px;
+/* --- Sobre Nosotros (media queries) ---*/
+@media (max-width: 640px) {
+  .articulo {
+    margin: 0;
+    background-color: darkgray;
+  }
+  .articulo section {
+    padding: 35px;
+    text-align: justify;
+  }
+  .articulo .collImage1 img {
+    width: 310px;
+    height: 290px;
     border-radius: 2px;
     margin: 15px 20px;
+  }
 }
-
-.banda {
-    display: inline;
-    position: unset;
-    background-color: transparent;
-}
-
-.banda li {
-    list-style: circle;
-    margin: 15px;
-}
-
+/* --- Musica (media queries) ---*/
 @media (max-width: 640px) {
-    .articulo {
-        margin: 0;
-        background-color: darkgray;
-    }
-
-    .articulo section {
-        padding: 35px;
-        text-align: justify;
-    }
-
-    .collImage1 img {
-        width: 310px;
-        height: 290px;
-        border-radius: 2px;
-        margin: 15px 20px;
-    }
-}
-
-/* --- Musica (Albumnes) --- */
-
-.titulo2 {
-    text-align: center;
-    font-size: 40px;
-    margin: 70px 35px;
-}
-
-.albumnes {
+  .albumnes {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.albumnes div {
+  }
+  .albumnes div {
     display: flex;
+    flex-direction: column;
     margin-bottom: 60px;
     border-bottom: 2px solid black;
+    align-items: center;
+  }
+  .albumnes div img {
+    width: 320px;
+    height: 320px;
+  }
+  .descAlbum {
+    margin: 20px 0px;
+  }
 }
-
-.descAlbum {
-    flex-direction: column;
-    margin-left: 50px;
-}
-
-.descAlbum h2,h3 {
-    margin-top: 0px;
-}
-
-.albumnes div img {
-    width: 470px;
-    height: 440px;
-}
-
-@media (max-width: 640px) {
-    .albumnes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .albumnes div {
-        display: flex;
-        margin-bottom: 60px;
-        border-bottom: 2px solid black;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .albumnes div img {
-        width: 320px;
-        height: 320px;
-    }
-
-    .albumnes div {
-        display: flex;
-        margin-bottom: 60px;
-        border-bottom: 2px solid black;
-        align-items: center;
-    }
-
-    .descAlbum {
-        margin: 20px 0px;
-    }
-}
-
-/* --- Formulario Contacto --- */
-
-.titulo3 {
-    text-align: center;
-    font-size: 40px;
-    margin: 70px 35px;
-    padding-bottom: 40px;
-    border-bottom: 2px #cdcdcd solid;
-}
-
-.contacto {
-    display: flex;
-    justify-content: center;
-}
-
-form {
+/* --- Contacto (media queries) ---*/
+@media (max-width: 360px) {
+  form {
     display: flex;
     flex-direction: column;
-    width: 880px;
+    width: 300px;
     height: 450px;
     padding: 20px;
-}
-
-.aaa {
-    display: flex;
-    justify-content: space-between;
-}
-
-form .contenido {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 38px;
-}
-
-#enviar-btn {
-    color: white;
-    background-color: rgb(199, 49, 49);
+  }
+  input[type=text], input[type=email] {
+    width: 260px;
     height: 40px;
-    font-size: medium;
-    border: none;
-    margin-top: 20px;
+  }
+  .contacto .row .col-12 {
+    margin-bottom: 15px;
+  }
+  .contacto .form-label {
+    font-size: 14px;
+  }
+  .contacto .form-control {
+    font-size: 14px;
+  }
+  .contacto textarea {
+    height: auto;
+  }
+  .contacto .btn {
+    font-size: 16px;
+    padding: 10px;
+  }
 }
-
-label {
-    margin-bottom: 10px;
-}
-
-input[type="text"],input[type="email"] {
-    width: 410px;
-    height: 40px;
-}
-
-
+/* --- Tienda de Productos (nedia queries) ---*/
 @media (max-width: 360px) {
-    form {
-        display: flex;
-        flex-direction: column;
-        width: 300px;
-        height: 450px;
-        padding: 20px;
-    }
-
-    input[type="text"],input[type="email"] {
-        width: 260px;
-        height: 40px;
-    }
-    .contacto .row .col-12 {
-        margin-bottom: 15px;
-    }
-
-    .contacto .form-label {
-        font-size: 14px;
-    }
-
-    .contacto .form-control {
-        font-size: 14px;
-    }
-
-    .contacto textarea {
-        height: auto;
-    }
-
-    .contacto .btn {
-        font-size: 16px;
-        padding: 10px;
-    }
+  .logoShop {
+    width: 30%;
+  }
 }
-
-.manager {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.imgManager {
-    width: 200px;
-}
-
-.manager p {
-    font-size: 20px;
-    color: #000000;
-    margin: 5px;
-}
-
-
-/* ---- Tienda de Productos ----*/
-
-.menuShop {
-    height: 70px;
-}
-
-.listShop {
-    padding: 0px;
-    margin: 0px;
-}
-
-.logoShop {
-    width: 8%;
-}
-
-.textShop {
-    font-size: 35px;
-    text-align: center;
-    margin: 60px;
-}
-
-@media (max-width: 360px) {
-    .logoShop {
-        width: 30%;
-    }
-}
-
-
-/* --- Footer --- */
-
-footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 60px;
-}
-
-.redes {
-    display: flex;
-    text-align: center;
-    width: 250px;
-}
-
-.redes div {
-    width: 200px;
-}
-
-.redes img {
-    width: 30px;
-}
-
+/* --- Footer (media queries) --- */
 @media (max-width: 640px) {
-    footer p {
-        text-align: center;
-    }
+  footer p {
+    text-align: center;
+  }
 }
 
-
+/*# sourceMappingURL=style.css.map */

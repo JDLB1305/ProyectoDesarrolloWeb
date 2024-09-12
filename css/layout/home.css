@@ -1,0 +1,66 @@
+.banner {
+  width: 1342px;
+  height: 500px;
+}
+
+.eventos h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 30px;
+}
+.eventos .contenedor1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #f7f3f3;
+  border-top: 3px solid red;
+  padding: 40px;
+  margin: 0px 35px 0px 35px;
+}
+.eventos .contenedor1 button {
+  width: 170px;
+  height: 70px;
+  background: transparent;
+  border: none;
+}
+.eventos .contenedor1 button:hover {
+  border: 3px white solid;
+  border-radius: 3px;
+}
+.eventos .contenedor1 button a {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+}
+.eventos .contenedor1 button a:hover {
+  color: rgb(219, 214, 214);
+}
+
+.texto1 h2 {
+  font-size: x-large;
+}
+
+/* --- Musica --- */
+.musicaHome h2 {
+  font-size: 35px;
+  text-align: center;
+  margin: 60px;
+}
+
+.album {
+  display: flex;
+  justify-content: space-evenly;
+}
+.album div {
+  text-align: center;
+}
+.album div img {
+  height: 300px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 4%;
+}
+
+/*# sourceMappingURL=home.css.map */

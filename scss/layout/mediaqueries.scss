@@ -1,0 +1,194 @@
+@import "../utilities/variables.scss";
+
+@mixin alinear-columna {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Navegacion (media queries) ---*/
+
+@media (max-width: 640px) {
+    nav {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $fondoNav;
+        padding: 0 20px;
+        z-index: 9;
+
+        .menu-icon {
+            display: block;
+        }
+
+        ul {
+            display: none; /* Oculta el menú */
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            background-color: $fondoNav;
+            position: absolute;
+            top: 60px;
+            left: 0;
+
+            .show {
+                display: flex; /* Muestra el menú cuando se haga clic */
+                z-index: 3;
+            }
+
+            li {
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+/* ---- Contenido Home (media queries)--- */
+
+@media (max-width: 640px)  {
+    .banner {
+        width: 360px;
+        height: 200px;
+    }
+
+    .eventos {
+        .contenedor1 {
+            @include alinear-columna;
+            background-color: $fondoNav;
+            color: $colorBlanco;
+            border-top: 3px solid red;
+            padding: 40px;
+            margin: 0px 35px 0px 35px;
+        }
+    }
+
+    .texto1 {
+        text-align: center;
+    }
+
+    .musicaHome {
+        @include alinear-columna;
+        align-items: center;
+    }
+
+    .carousel-inner .carousel-item .col-md-3 {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item.active .col-md-3:first-child {
+        display: block;
+        width: 80%;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        width: 10%;
+    }
+}
+
+
+/* --- Sobre Nosotros (media queries) ---*/
+
+@media (max-width: 640px){
+    .articulo {
+        margin: 0;
+        background-color: $fondoBlog;
+
+        section {
+            padding: 35px;
+            text-align: justify;
+        }
+
+        .collImage1 {
+            img {
+                width: 310px;
+                height: 290px;
+                border-radius: 2px;
+                margin: 15px 20px;
+            }
+        } 
+    }
+}
+
+/* --- Musica (media queries) ---*/
+
+
+@media (max-width: 640px) {
+    .albumnes {
+        @include alinear-columna;
+        align-items: center;
+
+        div {
+            @include alinear-columna;
+            margin-bottom: 60px;
+            border-bottom: 2px solid $fondoNav;
+            align-items: center;
+
+            img {
+                width: 320px;
+                height: 320px;
+            }
+        }
+    }
+    
+    .descAlbum {
+        margin: 20px 0px;
+    }
+}
+
+/* --- Contacto (media queries) ---*/
+
+@media (max-width: 360px) {
+    form {
+        @include alinear-columna;
+        width: 300px;
+        height: 450px;
+        padding: 20px;
+    }
+
+    input[type="text"],input[type="email"] {
+        width: 260px;
+        height: 40px;
+    }
+
+    .contacto .row .col-12 {
+        margin-bottom: 15px;
+    }
+
+    .contacto .form-label {
+        font-size: 14px;
+    }
+
+    .contacto .form-control {
+        font-size: 14px;
+    }
+
+    .contacto textarea {
+        height: auto;
+    }
+
+    .contacto .btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* --- Tienda de Productos (nedia queries) ---*/
+
+@media (max-width: 360px) {
+    .logoShop {
+        width: 30%;
+    }
+}
+
+/* --- Footer (media queries) --- */
+
+@media (max-width: 640px) {
+    footer {
+        p {
+            text-align: center;
+        }
+    }
+}
+
+
