@@ -1,4 +1,10 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* --- Navegacion (media queries) ---*/
 @media (max-width: 640px) {
   nav {
@@ -35,7 +41,7 @@
 /* ---- Contenido Home (media queries)--- */
 @media (max-width: 640px) {
   .banner {
-    width: 360px;
+    width: 100%;
     height: 200px;
   }
   .eventos .contenedor1 {

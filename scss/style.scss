@@ -1,11 +1,4 @@
 @import "utilities/variables";
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: $fuente;
-}
-
 @import "layout/navegacion";
 @import "layout/home";
 @import "layout/aboutUs";
@@ -13,5 +6,5 @@
 @import "layout/music";
 @import "layout/shop";
 @import "layout/piepagina";
-@import "layout/mediaqueries.scss";
+@import "layout/mediaqueries";
 
